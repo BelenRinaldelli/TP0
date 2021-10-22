@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-areas: "logo logo sing"
+                         "logo logo socialmedia"
+                         "secondcontainer secondcontainer secondcontainer";
+    background-color: whitesmoke;
+}
+
+.logo{
+    grid-area: logo;
+}
+.sing{
+    grid-area: sing;
+}
+.socialmedia{
+    grid-area: socialmedia;
+}
+.secondcontainer{
+    grid-area: secondcontainer;
+    background-color: #e2e2e2;
+}
+
+
