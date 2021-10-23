@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template-areas: "logo logo sing"
+    grid-template-areas: "logo logo sign"
                          "logo logo socialmedia"
                          "secondcontainer secondcontainer secondcontainer";
     background-color: whitesmoke;
@@ -9,15 +9,23 @@
 .logo{
     grid-area: logo;
 }
-.sing{
-    grid-area: sing;
+.sign{
+    grid-area: sign;
+    display:flex;
+  justify-content: flex-end;
 }
 .socialmedia{
     grid-area: socialmedia;
+    display:flex;
+  justify-content: flex-end;
 }
 .secondcontainer{
     grid-area: secondcontainer;
     background-color: #e2e2e2;
 }
+
+fieldset{
+        background-color: #5f4c4c;
+      }
 
 
