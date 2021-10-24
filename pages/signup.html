@@ -7,20 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/stylesheet.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>Registrate en Dharmitas</title>
 </head>
-
 <body>
-    <h1>Bienvenidos a Dharmitas</h1>
+    <section class="container">    
+        <div class="item logo"><a href="/index.html">
+            <img class="img-logo" src="/assets/img/logo.png">
+            </a></div>
+            <!--No deberian estar los iconos de registrar e inicio sesion
+                Poner al final de la pag iconos redes sociales y agregar preg frecuentes-->
+        <div class="item sign">
+            <button onclick="location.href='signup.html'">Registrarse</button>
+            <button onclick="location.href='signin.html'">Iniciar sesión</button>
+        </div>
+
+        <div class="item socialmedia">
+            <a href="https://www.instagram.com/dharmitas_indumentaria/?hl=es">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/dharmitas/">
+            <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.link/ok3ihb">
+            <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    <section class="formcontainer">
+    <h3>Bienvenidos a Dharmitas</h3>
     <h2>Para crecer jugando</h2>
     <form>
         <fieldset>
-            <h2>Registro de usuario</h2>
-            <br>
+            <legend>Registro de usuario</legend>
             <label for="username">Nombre de usuario</label>
             <input type="username" class="form-control" id="username" placeholder="Ingresa tu nombre de usuario"
                 name="username">
@@ -38,7 +60,6 @@
 
             <br>
             <label>Género:</label>
-
             <div>
                 <label class="radio-inline">
                     <input type="radio" name="optradio">Masculino
@@ -51,9 +72,23 @@
                 </label>
             </div>
             <br>
+            <legend>Información personal</legend>
+            <label for="lastname">Apellido</label>
+            <input type="lastname" class="form-control" id="lastname" placeholder="Apellido"
+                name="lastname">
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="name" class="form-control" id="name" placeholder="Nombre"
+                    name="name">
+            
 
             <input type="submit" class="form-check-input" value="Submit">
         </fieldset>
     </form>
-
+    </section>
+    <section class="item thirdcontainer">
+        <h2>Preguntas frecuentes</h2>
+        </section>
+    </section>
+    </body>
 </html>

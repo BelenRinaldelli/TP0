@@ -1,11 +1,50 @@
+/**************** LOGO  ****************/
+.img-logo{
+    height:100px;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+/**************** SIGN  ****************/
+button{
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+/**************** SOCIAL MEDIA  ****************/
+i{
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/**************** SECOND CONTAINER  ****************/
+h1{
+font-family: 'Bebas Neue', cursive;
+font-size:50px;
+}
+
+h2{
+font-family: 'Heebo', sans-serif;
+}
+/****************   Grid   ****************/
 .container{
     display: grid;
     grid-template-areas: "logo logo sign"
                          "logo logo socialmedia"
-                         "secondcontainer secondcontainer secondcontainer";
+                         "secondcontainer secondcontainer secondcontainer"
+                         "formcontainer formcontainer formcontainer"
+                         "registercontainer registercontainer registercontainer";
+/*revisar lo de aca arriba como adaptarlo para todas las paginas*/
     background-color: whitesmoke;
 }
-
+.registercontainer{
+    grid-area: registercontainer;
+}
+.formcontainer{
+    grid-area: formcontainer;
+}
 .logo{
     grid-area: logo;
 }
