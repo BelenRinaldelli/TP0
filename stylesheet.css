@@ -1,21 +1,55 @@
 /**************** LOGO  ****************/
 .img-logo{
-    height:100px;
+    height:90px;
     padding-top: 0.5em;
+    padding-left: 0.5em;
+    cursor: pointer;
+}
+.img-logo.center{
     cursor: pointer;
 }
 /**************** SIGN  ****************/
-button{
+/*button{
     height: 40px;
     margin-left: 10px;
     text-align: center;
     cursor: pointer;
+}*/
+
+.signbutton {
+	box-shadow: 0px 10px 14px -7px #7c8394;
+	background:linear-gradient(to bottom, #cf99cd 5%, #824185 100%);
+	background-color:#cf99cd;
+	border-radius:18px;
+	border:1px solid #25262b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	padding:9px 21px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #666666;
+    margin-left: 10px;
 }
+.signbutton:hover {
+	background:linear-gradient(to bottom, #824185 5%, #cf99cd 100%);
+	background-color:#824185;
+}
+.signbutton:active {
+	position:relative;
+	top:1px;
+}
+
 /**************** SOCIAL MEDIA  ****************/
 i{
     height: 40px;
     margin-left: 10px;
     cursor: pointer;
+    font-size: 2em;
+    padding: 0.5em;
+    padding-top: 0.15em;
 }
 
 
@@ -23,11 +57,35 @@ i{
 h1{
 font-family: 'Bebas Neue', cursive;
 font-size:50px;
+padding-left: 0.15em;
+margin: 15px;
 }
 
 h2{
 font-family: 'Heebo', sans-serif;
+font-size: 2em;
 }
+.product {
+    float: left;
+    padding: 10px;
+  }
+  .news, .moch, .bags{
+      padding-bottom: 320px;
+  }
+
+  .product_img{
+      width: 250px;
+      height: 250px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+/****************   Form   ****************/
+  fieldset{
+    background-color: #5f4c4c;
+  }
+
+
 /****************   Grid   ****************/
 .container{
     display: grid;
@@ -37,7 +95,7 @@ font-family: 'Heebo', sans-serif;
                          "formcontainer formcontainer formcontainer"
                          "registercontainer registercontainer registercontainer";
 /*revisar lo de aca arriba como adaptarlo para todas las paginas*/
-    background-color: whitesmoke;
+    background-color: white;
 }
 .registercontainer{
     grid-area: registercontainer;
@@ -60,11 +118,6 @@ font-family: 'Heebo', sans-serif;
 }
 .secondcontainer{
     grid-area: secondcontainer;
-    background-color: #e2e2e2;
+    background-color: whitesmoke;
 }
-
-fieldset{
-        background-color: #5f4c4c;
-      }
-
 
