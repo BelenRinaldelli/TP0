@@ -41,7 +41,6 @@
 	position:relative;
 	top:1px;
 }
-
 /**************** SOCIAL MEDIA  ****************/
 i{
     height: 40px;
@@ -51,19 +50,12 @@ i{
     padding: 0.5em;
     padding-top: 0.15em;
 }
-
-
 /**************** SECOND CONTAINER  ****************/
 h1{
 font-family: 'Bebas Neue', cursive;
 font-size:50px;
 padding-left: 0.15em;
 margin: 15px;
-}
-
-h2{
-font-family: 'Heebo', sans-serif;
-font-size: 2em;
 }
 .product {
     float: left;
@@ -72,7 +64,6 @@ font-size: 2em;
   .news, .moch, .bags{
       padding-bottom: 320px;
   }
-
   .product_img{
       width: 250px;
       height: 250px;
@@ -80,7 +71,6 @@ font-size: 2em;
   .product_img:hover{
       animation: fadeIn 3s;
   }
-
   @keyframes fadeIn {
       from {
           opacity: 0;
@@ -92,12 +82,19 @@ font-size: 2em;
   * {
     box-sizing: border-box;
   }
+/****************  THIRD CONTAINER   ****************/
+h2{
+    font-family: 'Heebo', sans-serif;
+    font-size: 2em;
+    padding-left: 40%;
+    }
+.frec_q{
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+       }
 /****************   Form   ****************/
   fieldset{
     background-color: #5f4c4c;
   }
-
-
 /****************   Grid   ****************/
 .container{
     display: grid;
@@ -106,7 +103,7 @@ font-size: 2em;
                          "secondcontainer secondcontainer secondcontainer"
                          "formcontainer formcontainer formcontainer"
                          "registercontainer registercontainer registercontainer";
-/*revisar lo de aca arriba como adaptarlo para todas las paginas*/
+/*revisar lo de aca arriba como adaptarlo para todas las paginas y falta thirdcontainer*/
     background-color: white;
 }
 .registercontainer{
@@ -132,4 +129,7 @@ font-size: 2em;
     grid-area: secondcontainer;
     background-color: whitesmoke;
 }
-
+.thirdcontainer{
+    grid-area: secondcontainer;
+    background-color:whitesmoke;
+}
